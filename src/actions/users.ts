@@ -13,6 +13,13 @@ export async function updateUserAlias(alias: string) {
     };
   }
 }
+export async function getUserProfile() {
+  return {
+    alias: "SilentWolf",
+    avatarSeed: "silentwolf",
+    createdAt: new Date(),
+  };
+}
 
 export async function regenerateAlias() {
   try {
